@@ -1,0 +1,35 @@
+apiVersion: skaffold/v4beta1
+kind: Config
+metadata:
+  name: aquavid
+build:
+  tagPolicy:
+    gitCommit: {}
+  artifacts:
+  - image: 456087932636.dkr.ecr.us-west-2.amazonaws.com/aquavid
+    context: .
+    docker:
+      dockerfile: Dockerfile
+    hooks:
+      before:
+        - command: ["sh", "-c", "aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 456087932636.dkr.ecr.us-west-2.amazonaws.com"]
+          os: [darwin, linux]
+manifests:
+  kustomize:
+    paths:
+    - kubernetes/base/
+profiles:
+  - name: dev
+    manifests:
+      kustomize:
+        paths:
+        - kubernetes/overlays/development
+    deploy:
+      kubeContext: devglobal
+  - name: prod
+    manifests:
+      kustomize:
+        paths:
+        - kubernetes/overlays/production
+    deploy:
+      kubeContext: global

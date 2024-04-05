@@ -1,0 +1,442 @@
+{
+    "pty01-eagle180-01": {
+        "ip": "10.7.7.104",
+        "type": "otaq"
+    },
+    "pty01-eagle180-02": {
+        "ip": "10.7.7.105",
+        "type": "otaq"
+    },
+    "pty01-axis-c2-internal": {
+        "ip": "10.7.7.150",
+        "type": "axis"
+    },
+    "pty01-axis-c2-bow": {
+        "ip": "10.7.7.151",
+        "type": "axis"
+    },
+    "pty01-axis-accommodations-stern": {
+        "ip": "10.7.7.152",
+        "type": "axis"
+    },
+    "pty01-axis-silage-internal": {
+        "ip": "10.7.7.153",
+        "type": "axis"
+    },
+    "pty01-axis-silage-starboard": {
+        "ip": "10.7.7.154",
+        "type": "axis"
+    },
+    "pty01-axis-silage-bow": {
+        "ip": "10.7.7.155",
+        "type": "axis"
+    },
+    "pty01-axis-silage-port": {
+        "ip": "10.7.7.156",
+        "type": "axis"
+    },
+    "pty01-axis-mast-bow": {
+        "ip": "10.7.7.157",
+        "type": "axis"
+    },
+    "pty01-axis-mast-stern": {
+        "ip": "10.7.7.158",
+        "type": "axis"
+    },
+    "pty01-axis-pump": {
+        "ip": "10.7.7.159",
+        "type": "axis"
+    },
+    "pty01-axis-f2-internal": {
+        "ip": "10.7.7.160",
+        "type": "axis"
+    },
+    "pty01-axis-f2-bowl-starboard": {
+        "ip": "10.7.7.161",
+        "type": "axis"
+    },
+    "pty01-axis-f2-bowl-port": {
+        "ip": "10.7.7.162",
+        "type": "axis"
+    },
+    "pty01-axis-f2-starboard": {
+        "ip": "10.7.7.163",
+        "type": "axis"
+    },
+    "pty01-axis-f2-stern": {
+        "ip": "10.7.7.164",
+        "type": "axis"
+    },
+    "pty01-axis-f2-port": {
+        "ip": "10.7.7.165",
+        "type": "axis"
+    },
+    "pty01-axis-f2-hopper-starboard": {
+        "ip": "10.7.7.166",
+        "type": "axis"
+    },
+    "pty01-axis-f2-hopper-port": {
+        "ip": "10.7.7.167",
+        "type": "axis"
+    },
+    "pty01-axis-f2-under-hopper-starboard": {
+        "ip": "10.7.7.168",
+        "type": "axis"
+    },
+    "pty01-axis-f2-under-hopper-port": {
+        "ip": "10.7.7.169",
+        "type": "axis"
+    },
+    "pty02-eagle180-01": {
+        "ip": "10.7.9.104",
+        "type": "otaq"
+    },
+    "pty02-eagle180-02": {
+        "ip": "10.7.9.105",
+        "type": "otaq"
+    },
+    "pty02-axis-c2-internal": {
+        "ip": "10.7.9.150",
+        "type": "axis"
+    },
+    "pty02-axis-c2-bow": {
+        "ip": "10.7.9.151",
+        "type": "axis"
+    },
+    "pty02-axis-accommodations-stern": {
+        "ip": "10.7.9.152",
+        "type": "axis"
+    },
+    "pty02-axis-silage-internal": {
+        "ip": "10.7.9.153",
+        "type": "axis"
+    },
+    "pty02-axis-silage-starboard": {
+        "ip": "10.7.9.154",
+        "type": "axis"
+    },
+    "pty02-axis-silage-bow": {
+        "ip": "10.7.9.155",
+        "type": "axis"
+    },
+    "pty02-axis-silage-port": {
+        "ip": "10.7.9.156",
+        "type": "axis"
+    },
+    "pty02-axis-mast-bow": {
+        "ip": "10.7.9.157",
+        "type": "axis"
+    },
+    "pty02-axis-mast-stern": {
+        "ip": "10.7.9.158",
+        "type": "axis"
+    },
+    "pty02-axis-pump": {
+        "ip": "10.7.9.159",
+        "type": "axis"
+    },
+    "pty02-axis-f2-internal": {
+        "ip": "10.7.9.160",
+        "type": "axis"
+    },
+    "pty02-axis-f2-bowl-starboard": {
+        "ip": "10.7.9.161",
+        "type": "axis"
+    },
+    "pty02-axis-f2-bowl-port": {
+        "ip": "10.7.9.162",
+        "type": "axis"
+    },
+    "pty02-axis-f2-starboard": {
+        "ip": "10.7.9.163",
+        "type": "axis"
+    },
+    "pty02-axis-f2-stern": {
+        "ip": "10.7.9.164",
+        "type": "axis"
+    },
+    "pty02-axis-f2-port": {
+        "ip": "10.7.9.165",
+        "type": "axis"
+    },
+    "pty02-axis-f2-hopper-starboard": {
+        "ip": "10.7.9.166",
+        "type": "axis"
+    },
+    "pty02-axis-f2-hopper-port": {
+        "ip": "10.7.9.167",
+        "type": "axis"
+    },
+    "pty02-axis-f2-under-hopper-starboard": {
+        "ip": "10.7.9.168",
+        "type": "axis"
+    },
+    "pty02-axis-f2-under-hopper-port": {
+        "ip": "10.7.9.169",
+        "type": "axis"
+    },
+    "pty03-eagle180-01": {
+        "ip": "10.7.11.104",
+        "type": "otaq"
+    },
+    "pty03-eagle180-02": {
+        "ip": "10.7.11.105",
+        "type": "otaq"
+    },
+    "pty03-axis-c2-internal": {
+        "ip": "10.7.11.150",
+        "type": "axis"
+    },
+    "pty03-axis-c2-bow": {
+        "ip": "10.7.11.151",
+        "type": "axis"
+    },
+    "pty03-axis-accommodations-stern": {
+        "ip": "10.7.11.152",
+        "type": "axis"
+    },
+    "pty03-axis-silage-internal": {
+        "ip": "10.7.11.153",
+        "type": "axis"
+    },
+    "pty03-axis-silage-starboard": {
+        "ip": "10.7.11.154",
+        "type": "axis"
+    },
+    "pty03-axis-silage-bow": {
+        "ip": "10.7.11.155",
+        "type": "axis"
+    },
+    "pty03-axis-silage-port": {
+        "ip": "10.7.11.156",
+        "type": "axis"
+    },
+    "pty03-axis-mast-bow": {
+        "ip": "10.7.11.157",
+        "type": "axis"
+    },
+    "pty03-axis-mast-stern": {
+        "ip": "10.7.11.158",
+        "type": "axis"
+    },
+    "pty03-axis-pump": {
+        "ip": "10.7.11.159",
+        "type": "axis"
+    },
+    "pty03-axis-f2-internal": {
+        "ip": "10.7.11.160",
+        "type": "axis"
+    },
+    "pty03-axis-f2-bowl-starboard": {
+        "ip": "10.7.11.161",
+        "type": "axis"
+    },
+    "pty03-axis-f2-bowl-port": {
+        "ip": "10.7.11.162",
+        "type": "axis"
+    },
+    "pty03-axis-f2-starboard": {
+        "ip": "10.7.11.163",
+        "type": "axis"
+    },
+    "pty03-axis-f2-stern": {
+        "ip": "10.7.11.164",
+        "type": "axis"
+    },
+    "pty03-axis-f2-port": {
+        "ip": "10.7.11.165",
+        "type": "axis"
+    },
+    "pty03-axis-f2-hopper-starboard": {
+        "ip": "10.7.11.166",
+        "type": "axis"
+    },
+    "pty03-axis-f2-hopper-port": {
+        "ip": "10.7.11.167",
+        "type": "axis"
+    },
+    "pty03-axis-f2-under-hopper-starboard": {
+        "ip": "10.7.11.168",
+        "type": "axis"
+    },
+    "pty03-axis-f2-under-hopper-port": {
+        "ip": "10.7.11.169",
+        "type": "axis"
+    },
+    "pty04-eagle180-01": {
+        "ip": "10.7.13.104",
+        "type": "otaq"
+    },
+    "pty04-eagle180-02": {
+        "ip": "10.7.13.105",
+        "type": "otaq"
+    },
+    "pty04-axis-c2-internal": {
+        "ip": "10.7.13.150",
+        "type": "axis"
+    },
+    "pty04-axis-c2-bow": {
+        "ip": "10.7.13.151",
+        "type": "axis"
+    },
+    "pty04-axis-accommodations-stern": {
+        "ip": "10.7.13.152",
+        "type": "axis"
+    },
+    "pty04-axis-silage-internal": {
+        "ip": "10.7.13.153",
+        "type": "axis"
+    },
+    "pty04-axis-silage-starboard": {
+        "ip": "10.7.13.154",
+        "type": "axis"
+    },
+    "pty04-axis-silage-bow": {
+        "ip": "10.7.13.155",
+        "type": "axis"
+    },
+    "pty04-axis-silage-port": {
+        "ip": "10.7.13.156",
+        "type": "axis"
+    },
+    "pty04-axis-mast-bow": {
+        "ip": "10.7.13.157",
+        "type": "axis"
+    },
+    "pty04-axis-mast-stern": {
+        "ip": "10.7.13.158",
+        "type": "axis"
+    },
+    "pty04-axis-pump": {
+        "ip": "10.7.13.159",
+        "type": "axis"
+    },
+    "pty04-axis-f2-internal": {
+        "ip": "10.7.13.160",
+        "type": "axis"
+    },
+    "pty04-axis-f2-bowl-starboard": {
+        "ip": "10.7.13.161",
+        "type": "axis"
+    },
+    "pty04-axis-f2-bowl-port": {
+        "ip": "10.7.13.162",
+        "type": "axis"
+    },
+    "pty04-axis-f2-starboard": {
+        "ip": "10.7.13.163",
+        "type": "axis"
+    },
+    "pty04-axis-f2-stern": {
+        "ip": "10.7.13.164",
+        "type": "axis"
+    },
+    "pty04-axis-f2-port": {
+        "ip": "10.7.13.165",
+        "type": "axis"
+    },
+    "pty04-axis-f2-hopper-starboard": {
+        "ip": "10.7.13.166",
+        "type": "axis"
+    },
+    "pty04-axis-f2-hopper-port": {
+        "ip": "10.7.13.167",
+        "type": "axis"
+    },
+    "pty04-axis-f2-under-hopper-starboard": {
+        "ip": "10.7.13.168",
+        "type": "axis"
+    },
+    "pty04-axis-f2-under-hopper-port": {
+        "ip": "10.7.13.169",
+        "type": "axis"
+    },
+    "koa02-eagle180-01": {
+        "ip": "10.0.9.104",
+        "type": "otaq"
+    },
+    "koa02-eagle180-02": {
+        "ip": "10.0.9.105",
+        "type": "otaq"
+    },
+    "koa02-axis-c2-internal": {
+        "ip": "10.0.9.150",
+        "type": "axis"
+    },
+    "koa02-axis-c2-bow": {
+        "ip": "10.0.9.151",
+        "type": "axis"
+    },
+    "koa02-axis-accommodations-stern": {
+        "ip": "10.0.9.152",
+        "type": "axis"
+    },
+    "koa02-axis-silage-internal": {
+        "ip": "10.0.9.153",
+        "type": "axis"
+    },
+    "koa02-axis-silage-starboard": {
+        "ip": "10.0.9.154",
+        "type": "axis"
+    },
+    "koa02-axis-silage-bow": {
+        "ip": "10.0.9.155",
+        "type": "axis"
+    },
+    "koa02-axis-silage-port": {
+        "ip": "10.0.9.156",
+        "type": "axis"
+    },
+    "koa02-axis-mast-bow": {
+        "ip": "10.0.9.157",
+        "type": "axis"
+    },
+    "koa02-axis-mast-stern": {
+        "ip": "10.0.9.158",
+        "type": "axis"
+    },
+    "koa02-axis-pump": {
+        "ip": "10.0.9.159",
+        "type": "axis"
+    },
+    "koa02-axis-f2-internal": {
+        "ip": "10.0.9.160",
+        "type": "axis"
+    },
+    "koa02-axis-f2-bowl-starboard": {
+        "ip": "10.0.9.161",
+        "type": "axis"
+    },
+    "koa02-axis-f2-bowl-port": {
+        "ip": "10.0.9.162",
+        "type": "axis"
+    },
+    "koa02-axis-f2-starboard": {
+        "ip": "10.0.9.163",
+        "type": "axis"
+    },
+    "koa02-axis-f2-stern": {
+        "ip": "10.0.9.164",
+        "type": "axis"
+    },
+    "koa02-axis-f2-port": {
+        "ip": "10.0.9.165",
+        "type": "axis"
+    },
+    "koa02-axis-f2-hopper-starboard": {
+        "ip": "10.0.9.166",
+        "type": "axis"
+    },
+    "koa02-axis-f2-hopper-port": {
+        "ip": "10.0.9.167",
+        "type": "axis"
+    },
+    "koa02-axis-f2-under-hopper-starboard": {
+        "ip": "10.0.9.168",
+        "type": "axis"
+    },
+    "koa02-axis-f2-under-hopper-port": {
+        "ip": "10.0.9.169",
+        "type": "axis"
+    }
+}

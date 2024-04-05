@@ -1,0 +1,954 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: camera-map
+    namespace: video
+data:
+    groups: |
+        {
+            "groupTypes": [
+                {
+                    "title": "Operating Site",
+                    "groups": [
+                        "pty01",
+                        "pty02",
+                        "pty03",
+                        "pty04"
+                    ]
+                },
+                {
+                    "title": "Camera Function",
+                    "groups": [
+                        "feeding",
+                        "security"
+                    ]
+                },
+                {
+                    "title": "Camera Type",
+                    "groups": [
+                        "otaq",
+                        "axis",
+                        "flir",
+                        "hikvision"
+                    ]
+                }
+            ]
+        }
+    map: |
+        {
+            "pty01-axis-c2-internal": {
+                "ip": "10.7.7.150",
+                "title": "C2 Internal",
+                "type": "axis",
+                "groups": [
+                    "security",
+                    "pty01",
+                    "axis"
+                ],
+                "protocol": "tcp",
+                "port": 10102
+            },
+            "pty01-axis-c2-bow": {
+                "ip": "10.7.7.151",
+                "title": "C2 Bow",
+                "type": "axis",
+                "groups": [
+                    "security",
+                    "pty01",
+                    "axis"
+                ],
+                "protocol": "tcp",
+                "port": 10103
+            },
+            "pty01-axis-accommodations-stern": {
+                "ip": "10.7.7.152",
+                "title": "Accommodations Stern",
+                "type": "axis",
+                "groups": [
+                    "security",
+                    "pty01",
+                    "axis"
+                ],
+                "protocol": "tcp",
+                "port": 10104
+            },
+            "pty01-axis-silage-internal": {
+                "ip": "10.7.7.153",
+                "title": "Silage Internal",
+                "type": "axis",
+                "groups": [
+                    "security",
+                    "pty01",
+                    "axis"
+                ],
+                "protocol": "tcp",
+                "port": 10105
+            },
+            "pty01-axis-silage-starboard": {
+                "ip": "10.7.7.154",
+                "title": "Silage Starboard",
+                "type": "axis",
+                "groups": [
+                    "security",
+                    "pty01",
+                    "axis"
+                ],
+                "protocol": "tcp",
+                "port": 10106
+            },
+            "pty01-axis-silage-bow": {
+                "ip": "10.7.7.155",
+                "title": "Silage Bow",
+                "type": "axis",
+                "groups": [
+                    "security",
+                    "pty01",
+                    "axis"
+                ],
+                "protocol": "tcp",
+                "port": 10107
+            },
+            "pty01-axis-silage-port": {
+                "ip": "10.7.7.156",
+                "title": "Silage Port",
+                "type": "axis",
+                "groups": [
+                    "security",
+                    "pty01",
+                    "axis"
+                ],
+                "protocol": "tcp",
+                "port": 10108
+            },
+            "pty01-axis-mast-bow": {
+                "ip": "10.7.7.157",
+                "title": "Mast Bow",
+                "type": "axis",
+                "groups": [
+                    "security",
+                    "pty01",
+                    "axis"
+                ],
+                "protocol": "tcp",
+                "port": 10109
+            },
+            "pty01-axis-mast-stern": {
+                "ip": "10.7.7.158",
+                "title": "Mast Stern",
+                "type": "axis",
+                "groups": [
+                    "security",
+                    "pty01",
+                    "axis"
+                ],
+                "protocol": "tcp",
+                "port": 10110
+            },
+            "pty01-axis-pump": {
+                "ip": "10.7.7.159",
+                "title": "Pump Room",
+                "type": "axis",
+                "groups": [
+                    "security",
+                    "pty01",
+                    "axis"
+                ],
+                "protocol": "tcp",
+                "port": 10111
+            },
+            "pty01-axis-f2-internal": {
+                "ip": "10.7.7.160",
+                "title": "F2 Internal",
+                "type": "axis",
+                "groups": [
+                    "security",
+                    "pty01",
+                    "axis"
+                ],
+                "protocol": "tcp",
+                "port": 10112
+            },
+            "pty01-axis-f2-bowl-starboard": {
+                "ip": "10.7.7.161",
+                "title": "F2 Bowl Starboard",
+                "type": "axis",
+                "groups": [
+                    "security",
+                    "pty01",
+                    "axis"
+                ],
+                "protocol": "tcp",
+                "port": 10113
+            },
+            "pty01-axis-f2-bowl-port": {
+                "ip": "10.7.7.162",
+                "title": "F2 Bowl Port",
+                "type": "axis",
+                "groups": [
+                    "security",
+                    "pty01",
+                    "axis"
+                ],
+                "protocol": "tcp",
+                "port": 10114
+            },
+            "pty01-axis-f2-starboard": {
+                "ip": "10.7.7.163",
+                "title": "F2 Starboard",
+                "type": "axis",
+                "groups": [
+                    "security",
+                    "pty01",
+                    "axis"
+                ],
+                "protocol": "tcp",
+                "port": 10115
+            },
+            "pty01-axis-f2-stern": {
+                "ip": "10.7.7.164",
+                "title": "F2 Stern",
+                "type": "axis",
+                "groups": [
+                    "security",
+                    "pty01",
+                    "axis"
+                ],
+                "port": 10116,
+                "protocol": "tcp",
+                "query_string": "resolution=720x720&FPS=15&h264profile=high&videobitratemode=vbr&videocodec=h264&camera=1&videozstrength=10&videozgopmode=dynamic"
+            },
+            "pty01-axis-f2-port": {
+                "ip": "10.7.7.165",
+                "title": "F2 Port",
+                "type": "axis",
+                "groups": [
+                    "security",
+                    "pty01",
+                    "axis"
+                ],
+                "protocol": "tcp",
+                "port": 10117
+            },
+            "pty01-axis-f2-hopper-starboard": {
+                "ip": "10.7.7.166",
+                "title": "F2 Hopper Starboard",
+                "type": "axis",
+                "groups": [
+                    "security",
+                    "pty01",
+                    "axis"
+                ],
+                "protocol": "tcp",
+                "port": 10118
+            },
+            "pty01-axis-f2-hopper-port": {
+                "ip": "10.7.7.167",
+                "type": "axis",
+                "title": "F2 Hopper Port",
+                "groups": [
+                    "security",
+                    "pty01",
+                    "axis"
+                ],
+                "protocol": "tcp",
+                "port": 10119
+            },
+            "pty01-axis-f2-under-hopper-starboard": {
+                "ip": "10.7.7.168",
+                "type": "axis",
+                "title": "F2 Under Hopper Starboard",
+                "groups": [
+                    "security",
+                    "pty01",
+                    "axis"
+                ],
+                "protocol": "tcp",
+                "port": 10120
+            },
+            "pty01-axis-f2-under-hopper-port": {
+                "ip": "10.7.7.169",
+                "type": "axis",
+                "title": "F2 Under Hopper Port",
+                "groups": [
+                    "security",
+                    "pty01",
+                    "axis"
+                ],
+                "protocol": "tcp",
+                "port": 10121
+            },
+            "pty01-hikvision-mast-stern-ptz": {
+                "ip": "10.7.7.135",
+                "type": "hikvision",
+                "title": "Mast Stern PTZ",
+                "groups": [
+                    "security",
+                    "pty01",
+                    "hikvision"
+                ],
+                "port": 10188,
+                "protocol": "tcp"
+            },
+            "pty02-axis-c2-internal": {
+                "ip": "10.7.9.150",
+                "type": "axis",
+                "title": "C2 Internal",
+                "groups": [
+                    "security",
+                    "pty02",
+                    "axis"
+                ],
+                "port": 10124
+            },
+            "pty02-axis-c2-bow": {
+                "ip": "10.7.9.151",
+                "type": "axis",
+                "title": "C2 Bow",
+                "groups": [
+                    "security",
+                    "pty02",
+                    "axis"
+                ],
+                "port": 10125
+            },
+            "pty02-axis-accommodations-stern": {
+                "ip": "10.7.9.152",
+                "type": "axis",
+                "title": "Accommodations Stern",
+                "groups": [
+                    "security",
+                    "pty02",
+                    "axis"
+                ],
+                "port": 10126
+            },
+            "pty02-axis-silage-internal": {
+                "ip": "10.7.9.153",
+                "title": "Silage Internal",
+                "type": "axis",
+                "groups": [
+                    "security",
+                    "pty02",
+                    "axis"
+                ],
+                "port": 10127
+            },
+            "pty02-axis-silage-starboard": {
+                "ip": "10.7.9.154",
+                "type": "axis",
+                "title": "Silage Starboard",
+                "groups": [
+                    "security",
+                    "pty02",
+                    "axis"
+                ],
+                "port": 10128
+            },
+            "pty02-axis-silage-bow": {
+                "ip": "10.7.9.155",
+                "type": "axis",
+                "title": "Silage Bow",
+                "groups": [
+                    "security",
+                    "pty02",
+                    "axis"
+                ],
+                "port": 10129
+            },
+            "pty02-axis-silage-port": {
+                "ip": "10.7.9.156",
+                "type": "axis",
+                "title": "Silage Port",
+                "groups": [
+                    "security",
+                    "pty02",
+                    "axis"
+                ],
+                "port": 10130
+            },
+            "pty02-axis-mast-bow": {
+                "ip": "10.7.9.157",
+                "type": "axis",
+                "title": "Mast Bow",
+                "groups": [
+                    "security",
+                    "pty02",
+                    "axis"
+                ],
+                "port": 10131
+            },
+            "pty02-axis-mast-stern": {
+                "ip": "10.7.9.158",
+                "type": "axis",
+                "title": "Mast Stern",
+                "groups": [
+                    "security",
+                    "pty02",
+                    "axis"
+                ],
+                "port": 10132
+            },
+            "pty02-axis-pump": {
+                "ip": "10.7.9.159",
+                "type": "axis",
+                "title": "Pump Room",
+                "groups": [
+                    "security",
+                    "pty02",
+                    "axis"
+                ],
+                "port": 10133
+            },
+            "pty02-axis-f2-internal": {
+                "ip": "10.7.9.160",
+                "type": "axis",
+                "title": "F2 Internal",
+                "groups": [
+                    "security",
+                    "pty02",
+                    "axis"
+                ],
+                "port": 10134
+            },
+            "pty02-axis-f2-bowl-starboard": {
+                "ip": "10.7.9.161",
+                "type": "axis",
+                "title": "F2 Bowl Starboard",
+                "groups": [
+                    "security",
+                    "pty02",
+                    "axis"
+                ],
+                "port": 10135
+            },
+            "pty02-axis-f2-bowl-port": {
+                "ip": "10.7.9.162",
+                "type": "axis",
+                "title": "F2 Bowl Port",
+                "groups": [
+                    "security",
+                    "pty02",
+                    "axis"
+                ],
+                "port": 10136
+            },
+            "pty02-axis-f2-starboard": {
+                "ip": "10.7.9.163",
+                "type": "axis",
+                "title": "F2 Starboard",
+                "groups": [
+                    "security",
+                    "pty02",
+                    "axis"
+                ],
+                "port": 10137
+            },
+            "pty02-axis-f2-stern": {
+                "ip": "10.7.9.164",
+                "type": "axis",
+                "title": "F2 Stern",
+                "groups": [
+                    "security",
+                    "pty02",
+                    "axis"
+                ],
+                "port": 10138,
+                "query_string": "resolution=720x720&FPS=15&h264profile=high&videobitratemode=vbr&videocodec=h264&camera=1&videozstrength=10&videozgopmode=dynamic"
+            },
+            "pty02-axis-f2-port": {
+                "ip": "10.7.9.165",
+                "type": "axis",
+                "title": "F2 Port",
+                "groups": [
+                    "security",
+                    "pty02",
+                    "axis"
+                ],
+                "port": 10139
+            },
+            "pty02-axis-f2-hopper-starboard": {
+                "ip": "10.7.9.166",
+                "type": "axis",
+                "title": "F2 Hopper Starboard",
+                "groups": [
+                    "security",
+                    "pty02",
+                    "axis"
+                ],
+                "port": 10140
+            },
+            "pty02-axis-f2-hopper-port": {
+                "ip": "10.7.9.167",
+                "type": "axis",
+                "title": "F2 Hopper Port",
+                "groups": [
+                    "security",
+                    "pty02",
+                    "axis"
+                ],
+                "port": 10141
+            },
+            "pty02-axis-f2-under-hopper-starboard": {
+                "ip": "10.7.9.168",
+                "type": "axis",
+                "title": "F2 Under Hopper Starboard",
+                "groups": [
+                    "security",
+                    "pty02",
+                    "axis"
+                ],
+                "port": 10142
+            },
+            "pty02-axis-f2-under-hopper-port": {
+                "ip": "10.7.9.169",
+                "type": "axis",
+                "title": "F2 Under Hopper Port",
+                "groups": [
+                    "security",
+                    "pty02",
+                    "axis"
+                ],
+                "port": 10143
+            },
+            "pty03-axis-c2-internal": {
+                "ip": "10.7.11.150",
+                "type": "axis",
+                "title": "C2 Internal",
+                "groups": [
+                    "security",
+                    "pty03",
+                    "axis"
+                ],
+                "port": 10146
+            },
+            "pty03-axis-c2-bow": {
+                "ip": "10.7.11.151",
+                "type": "axis",
+                "title": "C2 Bow",
+                "groups": [
+                    "security",
+                    "pty03",
+                    "axis"
+                ],
+                "port": 10147
+            },
+            "pty03-axis-accommodations-stern": {
+                "ip": "10.7.11.152",
+                "type": "axis",
+                "title": "Accommodations Stern",
+                "groups": [
+                    "security",
+                    "pty03",
+                    "axis"
+                ],
+                "port": 10148
+            },
+            "pty03-axis-silage-internal": {
+                "ip": "10.7.11.153",
+                "type": "axis",
+                "title": "Silage Internal",
+                "groups": [
+                    "security",
+                    "pty03",
+                    "axis"
+                ],
+                "port": 10149
+            },
+            "pty03-axis-silage-starboard": {
+                "ip": "10.7.11.154",
+                "title": "Silage Starboard",
+                "type": "axis",
+                "groups": [
+                    "security",
+                    "pty03",
+                    "axis"
+                ],
+                "port": 10150
+            },
+            "pty03-axis-silage-bow": {
+                "ip": "10.7.11.155",
+                "title": "Silage Bow",
+                "type": "axis",
+                "groups": [
+                    "security",
+                    "pty03",
+                    "axis"
+                ],
+                "port": 10151
+            },
+            "pty03-axis-silage-port": {
+                "ip": "10.7.11.156",
+                "type": "axis",
+                "title": "Silage Port",
+                "groups": [
+                    "security",
+                    "pty03",
+                    "axis"
+                ],
+                "port": 10152
+            },
+            "pty03-axis-mast-bow": {
+                "ip": "10.7.11.157",
+                "title": "Mast Bow",
+                "type": "axis",
+                "groups": [
+                    "security",
+                    "pty03",
+                    "axis"
+                ],
+                "port": 10153
+            },
+            "pty03-axis-mast-stern": {
+                "ip": "10.7.11.158",
+                "type": "axis",
+                "title": "Mast Stern",
+                "groups": [
+                    "security",
+                    "pty03",
+                    "axis"
+                ],
+                "port": 10154
+            },
+            "pty03-axis-pump": {
+                "ip": "10.7.11.159",
+                "type": "axis",
+                "title": "Pump Room",
+                "groups": [
+                    "security",
+                    "pty03",
+                    "axis"
+                ],
+                "port": 10155
+            },
+            "pty03-axis-f2-internal": {
+                "ip": "10.7.11.160",
+                "type": "axis",
+                "title": "F2 Internal",
+                "groups": [
+                    "security",
+                    "pty03",
+                    "axis"
+                ],
+                "port": 10156
+            },
+            "pty03-axis-f2-bowl-starboard": {
+                "ip": "10.7.11.161",
+                "type": "axis",
+                "title": "F2 Bowl Starboard",
+                "groups": [
+                    "security",
+                    "pty03",
+                    "axis"
+                ],
+                "port": 10157
+            },
+            "pty03-axis-f2-bowl-port": {
+                "ip": "10.7.11.162",
+                "type": "axis",
+                "title": "F2 Bowl Port",
+                "groups": [
+                    "security",
+                    "pty03",
+                    "axis"
+                ],
+                "port": 10158
+            },
+            "pty03-axis-f2-starboard": {
+                "ip": "10.7.11.163",
+                "type": "axis",
+                "groups": [
+                    "security",
+                    "pty03",
+                    "axis"
+                ],
+                "port": 10159
+            },
+            "pty03-axis-f2-stern": {
+                "ip": "10.7.11.164",
+                "type": "axis",
+                "title": "F2 Stern",
+                "groups": [
+                    "security",
+                    "pty03",
+                    "axis"
+                ],
+                "port": 10160,
+                "query_string": "resolution=720x720&FPS=15&h264profile=high&videobitratemode=vbr&videocodec=h264&camera=1&videozstrength=10&videozgopmode=dynamic"
+            },
+            "pty03-axis-f2-port": {
+                "ip": "10.7.11.165",
+                "type": "axis",
+                "title": "F2 Port",
+                "groups": [
+                    "security",
+                    "pty03",
+                    "axis"
+                ],
+                "port": 10161
+            },
+            "pty03-axis-f2-hopper-starboard": {
+                "ip": "10.7.11.166",
+                "type": "axis",
+                "title": "F2 Hopper Starboard",
+                "groups": [
+                    "security",
+                    "pty03",
+                    "axis"
+                ],
+                "port": 10162
+            },
+            "pty03-axis-f2-hopper-port": {
+                "ip": "10.7.11.167",
+                "type": "axis",
+                "title": "F2 Hopper Port",
+                "groups": [
+                    "security",
+                    "pty03",
+                    "axis"
+                ],
+                "port": 10163
+            },
+            "pty03-axis-f2-under-hopper-starboard": {
+                "ip": "10.7.11.168",
+                "type": "axis",
+                "title": "F2 Under Hopper Starboard",
+                "groups": [
+                    "security",
+                    "pty03",
+                    "axis"
+                ],
+                "port": 10164
+            },
+            "pty03-axis-f2-under-hopper-port": {
+                "ip": "10.7.11.169",
+                "type": "axis",
+                "title": "F2 Under Hopper Port",
+                "groups": [
+                    "security",
+                    "pty03",
+                    "axis"
+                ],
+                "port": 10165
+            },
+            "pty04-axis-c2-internal": {
+                "ip": "10.7.13.150",
+                "type": "axis",
+                "title": "C2 Internal",
+                "groups": [
+                    "security",
+                    "pty04",
+                    "axis"
+                ],
+                "port": 10168
+            },
+            "pty04-axis-c2-bow": {
+                "ip": "10.7.13.151",
+                "type": "axis",
+                "title": "C2 Bow",
+                "groups": [
+                    "security",
+                    "pty04",
+                    "axis"
+                ],
+                "port": 10169
+            },
+            "pty04-axis-accommodations-stern": {
+                "ip": "10.7.13.152",
+                "type": "axis",
+                "title": "Accommodations Stern",
+                "groups": [
+                    "security",
+                    "pty04",
+                    "axis"
+                ],
+                "port": 10170
+            },
+            "pty04-axis-silage-internal": {
+                "ip": "10.7.13.153",
+                "type": "axis",
+                "title": "Silage Internal",
+                "groups": [
+                    "security",
+                    "pty04",
+                    "axis"
+                ],
+                "port": 10171
+            },
+            "pty04-axis-silage-starboard": {
+                "ip": "10.7.13.154",
+                "type": "axis",
+                "title": "Silage Starboard",
+                "groups": [
+                    "security",
+                    "pty04",
+                    "axis"
+                ],
+                "port": 10172
+            },
+            "pty04-axis-silage-bow": {
+                "ip": "10.7.13.155",
+                "type": "axis",
+                "title": "Silage Bow",
+                "groups": [
+                    "security",
+                    "pty04",
+                    "axis"
+                ],
+                "port": 10173
+            },
+            "pty04-axis-silage-port": {
+                "ip": "10.7.13.156",
+                "type": "axis",
+                "title": "Silage Port",
+                "groups": [
+                    "security",
+                    "pty04",
+                    "axis"
+                ],
+                "port": 10174
+            },
+            "pty04-axis-mast-bow": {
+                "ip": "10.7.13.157",
+                "type": "axis",
+                "title": "Mast Bow",
+                "groups": [
+                    "security",
+                    "pty04",
+                    "axis"
+                ],
+                "port": 10175
+            },
+            "pty04-axis-mast-stern": {
+                "ip": "10.7.13.158",
+                "type": "axis",
+                "title": "Mast Stern",
+                "groups": [
+                    "security",
+                    "pty04",
+                    "axis"
+                ],
+                "port": 10176
+            },
+            "pty04-axis-pump": {
+                "ip": "10.7.13.159",
+                "type": "axis",
+                "title": "Pump Room",
+                "groups": [
+                    "security",
+                    "pty04",
+                    "axis"
+                ],
+                "port": 10177
+            },
+            "pty04-axis-f2-internal": {
+                "ip": "10.7.13.160",
+                "type": "axis",
+                "title": "F2 Internal",
+                "groups": [
+                    "security",
+                    "pty04",
+                    "axis"
+                ],
+                "port": 10178
+            },
+            "pty04-axis-f2-bowl-starboard": {
+                "ip": "10.7.13.161",
+                "type": "axis",
+                "title": "F2 Bowl Starboard",
+                "groups": [
+                    "security",
+                    "pty04",
+                    "axis"
+                ],
+                "port": 10179
+            },
+            "pty04-axis-f2-bowl-port": {
+                "ip": "10.7.13.162",
+                "type": "axis",
+                "title": "F2 Bowl Port",
+                "groups": [
+                    "security",
+                    "pty04",
+                    "axis"
+                ],
+                "port": 10180
+            },
+            "pty04-axis-f2-starboard": {
+                "ip": "10.7.13.163",
+                "type": "axis",
+                "title": "F2 Starboard",
+                "groups": [
+                    "security",
+                    "pty04",
+                    "axis"
+                ],
+                "port": 10181
+            },
+            "pty04-axis-f2-stern": {
+                "ip": "10.7.13.164",
+                "type": "axis",
+                "title": "F2 Stern",
+                "groups": [
+                    "security",
+                    "pty04",
+                    "axis"
+                ],
+                "port": 10182,
+                "query_string": "resolution=720x720&FPS=15&h264profile=high&videobitratemode=vbr&videocodec=h264&camera=1&videozstrength=10&videozgopmode=dynamic"
+            },
+            "pty04-axis-f2-port": {
+                "ip": "10.7.13.165",
+                "type": "axis",
+                "title": "F2 Port",
+                "groups": [
+                    "security",
+                    "pty04",
+                    "axis"
+                ],
+                "port": 10183
+            },
+            "pty04-axis-f2-hopper-starboard": {
+                "ip": "10.7.13.166",
+                "type": "axis",
+                "title": "F2 Hopper Starboard",
+                "groups": [
+                    "security",
+                    "pty04",
+                    "axis"
+                ],
+                "port": 10184
+            },
+            "pty04-axis-f2-hopper-port": {
+                "ip": "10.7.13.167",
+                "type": "axis",
+                "title": "F2 Hopper Port",
+                "groups": [
+                    "security",
+                    "pty04",
+                    "axis"
+                ],
+                "port": 10185
+            },
+            "pty04-axis-f2-under-hopper-starboard": {
+                "ip": "10.7.13.168",
+                "type": "axis",
+                "title": "F2 Under Hopper Starboard",
+                "groups": [
+                    "security",
+                    "pty04",
+                    "axis"
+                ],
+                "port": 10186
+            },
+            "pty04-axis-f2-under-hopper-port": {
+                "ip": "10.7.13.169",
+                "type": "axis",
+                "title": "F2 Under Hopper Port",
+                "groups": [
+                    "security",
+                    "pty04",
+                    "axis"
+                ],
+                "port": 10187
+            }
+        }
